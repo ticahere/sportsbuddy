@@ -29,8 +29,16 @@ body {
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 3rem;
+    /* top: 4rem; */
+    top:40%;
     z-index: 10;
+    background-color:rgba(37, 37, 37, 0.4);
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    left: 10%;
+    transition-duration: 0s;
+    border-radius: 10px;  /* Adjust the px value to increase or decrease the roundness */
   }
   
   /* Declare heights because of positioning of img element */
@@ -39,19 +47,11 @@ body {
   }
   .carousel-item > img {
     position: absolute;
-    top: -35%;
+    top: -20%;
     left: 50%; /* Move to 50% from the left of the container */
     transform: translateX(-50%); /* Shift it back to the left by half its own width */
     min-width: 100%;
     height: auto;
-  }
-  .carousel-caption{
-    background-color:rgba(37, 37, 37, 0.4);
-    padding: 20px;
-    width: fit-content;
-    left: 10%;
-    transition-duration: 0s;
-    border-radius: 10px;  /* Adjust the px value to increase or decrease the roundness */
   }
   .caption-header-container {
     display: flex;
