@@ -29,8 +29,8 @@ body {
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    /* top: 4rem; */
-    top:40%;
+    top: 4rem;
+    /* top:40%; */
     z-index: 10;
     background-color:rgba(37, 37, 37, 0.4);
     padding: 20px;
@@ -57,11 +57,6 @@ body {
     display: flex;
     align-items: center; /* This ensures vertical alignment in the middle */
   }
-  .logo {
-    height: 120px;
-    margin-right: 10px;
-    }
-
   .carousel-fade .carousel-item {
     opacity: 0;
     transition-duration: .6s;
@@ -138,3 +133,12 @@ body {
     }
   }
   
+  @media (max-width: 62em) {
+    .carousel-item > img {
+      position: absolute;
+      top: -20%;
+      left: 50%; /* Move to 50% from the left of the container */
+      transform: translateX(-50%); /* Shift it back to the left by half its own width */
+      height: 100%;
+    }
+  }
