@@ -30,7 +30,6 @@ body {
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     top: 4rem;
-    /* top:40%; */
     z-index: 10;
     background-color:rgba(37, 37, 37, 0.4);
     padding: 20px;
@@ -136,9 +135,21 @@ body {
   @media (max-width: 62em) {
     .carousel-item > img {
       position: absolute;
-      top: 0;
+      top:0;
       left: 50%; /* Move to 50% from the left of the container */
       transform: translateX(-50%); /* Shift it back to the left by half its own width */
       height: 100%;
     }
+    .carousel-caption {
+      top: 4rem;
+      z-index: 10;
+      background-color:rgba(37, 37, 37, 0.4);
+      padding: 20px;
+      width: fit-content;
+      height: fit-content;
+      left: 0;
+      transition-duration: 0s;
+      border-radius: 10px;  /* Adjust the px value to increase or decrease the roundness */
+    }
+    
   }
