@@ -136,7 +136,7 @@ body {
   @media (max-width: 62em) {
     .carousel-item > img {
       position: absolute;
-      top: -20%;
+      top: 0;
       left: 50%; /* Move to 50% from the left of the container */
       transform: translateX(-50%); /* Shift it back to the left by half its own width */
       height: 100%;
